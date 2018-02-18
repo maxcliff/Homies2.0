@@ -1,0 +1,85 @@
+* {
+  overflow: hidden;
+}
+
+body {
+  background-image: url("../media/wood.jpeg");
+  color: black;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+li {
+  border: 2px solid #7CB769;
+  text-align: center;
+}
+.primary{
+  background-color: grey
+}
+.ingredients a{
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+}
+.ingredients a:hover {
+  background-color: rgba(124, 183, 105, 0.58);
+  font-size: 24px;
+  color: #ffffff;
+}
+h1{
+  color: #7CB769;
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+h3 {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.container {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#gen {
+  color: #ffffff;
+  height: 5em;
+  width: 30em;
+  background-color: #7CB769;
+  border-radius: 1em;
+}
+#logo{
+  position: fixed;
+  left: 2em;
+  height: 25em;
+  width: 15em;
+}
+.menu{
+  position: absolute;
+  bottom: 10px;
+  text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0,0,0,0.15);
+
+}
+.modal-close {
+  visibility: hidden;
+}
+
+.modal-background {
+  opacity: 0.5 !important;
+}
+
+.modal-content {
+  margin-bottom: 5em;
+  text-align: center;
+  color: white;
+}
