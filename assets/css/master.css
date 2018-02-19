@@ -27,7 +27,7 @@ article {
 
 #mapid {
   height: 150px; 
-  width: 50%;
+  width: 100%;
   text-align: center;
   padding: 200px;
 }
@@ -77,9 +77,9 @@ article {
 }
 
 .modalDialog > div {
-	width: 600px;
+	width: 700px;
 	position: relative;
-	margin: 20% auto;
+	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
 	border-radius: 10px;
 	background: #fff;
