@@ -1,3 +1,11 @@
+body {
+  background-image: url("../media/wood.jpeg");
+  color: black;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 .primary {
   background-color: #9fbbcc;
   color: #FFFFFF;
@@ -26,7 +34,7 @@ article {
 }
 
 #mapid {
-  height: 150px; 
+  height: 150px;
   width: 100%;
   text-align: center;
   padding: 200px;
@@ -38,7 +46,7 @@ article {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-} 
+}
  .dropdown-content a {
     float: none;
     color: black;
@@ -46,7 +54,7 @@ article {
     text-decoration: none;
     display: block;
     text-align: left;
-} 
+}
 
 .dropdown-content a:hover {
     background-color: #ddd;

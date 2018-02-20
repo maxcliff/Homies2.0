@@ -2,16 +2,6 @@
   overflow: hidden;
 }
 
-body {
-  background-image: url("../media/wood.jpeg");
-  color: black;
-  min-height: 100vh;
-  max-height: 100vh;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-
 li {
   border: 2px solid #7CB769;
   text-align: center;
