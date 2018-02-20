@@ -48,12 +48,11 @@
           <div class="tile is-parent is-vertical">
             <article class="tile is-child notification primary">
               <p class="title">Welcome To Homies!</p>
-              <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum repudiandae numquam sit culpa necessitatibus possimus ullam provident quasi nemo deleniti!</p>
+              <p class="subtitle">We are a platform that advocates for the homeless - we are passionate about sharing the individual stories in each of your communities. Our goal is to make it easier for you to make informed donations and provide resources to those in need.</p>
             </article>
             <article class="tile is-child notification primary">
               <p class="title">How We Help!</p>
-              <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eos quidem voluptatum, enim mollitia amet blanditiis ab voluptatibus quasi perferendis. Mollitia laborum corporis sequi pariatur deserunt eaque expedita delectus! Consectetur,
-                enim, pariatur. Voluptates porro incidunt reprehenderit amet similique sequi mollitia?</p>
+              <p class="subtitle">We form partnerships with local food kitchens, homeless shelters, and homeless communities to provide a deeper understanding of why homelessness exists. We provide an easy to use platform for donors to inform themselves and then take action. Each donor can select how their donation will be used!</p>
             </article>
           </div>
         </div>
@@ -65,10 +64,9 @@
             <p class="subtitle">Features currently being developed for the platform</p>
             <div class="content">
               <ul>
-                <li>lorem5label</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto?</li>
+                <li>Increased Content (Interview, Podcasts, etc.).</li>
+                <li>Increased Partnerships in Various Locations.</li>
+                <li>More Soup Recipes!</li>
               </ul>
             </div>
           </div>
@@ -82,7 +80,11 @@
         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
         <div id="mapid"></div>
 		      <script>
+<<<<<<< HEAD
             var mymap = L.map('mapid').setView([38.9072, -77.0369], 14);
+=======
+            var mymap = L.map('mapid').setView([38.9072, -77.0369], 13);
+>>>>>>> 6c25ec1943f85da2f9f63e1b6d65c188c1670675
 
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -93,38 +95,27 @@
 
             //CCNV
             var marker = L.marker([38.894665, -77.031820]).addTo(mymap);
+            marker.bindPopup("<b>CCNV</b><br>http://www.theccnv.org/").openPopup();
 
            //Gospel Rescue Ministries
             var marker = L.marker([38.900331, -77.019219]).addTo(mymap);
-
-
-
-          var popup = L.popup()
-          .setLatLng([38.894665, -77.031820])
-          .setContent("CCNV")
-          .openOn(mymap);
-
-
-          // var popup = L.popup()
-          // .setLatLng([38.900331, -77.019219])
-          // .setContent("Gospel Rescue Ministries")
-          // .openOn(mymap);
-
-          //Coordinates and location of the shelters and soup kitchens
-          // var geojsonFeature = {
-          //   "type": "Feature",
-          //   "properties": {
-          //     "name": "Coors Field",
-          //     "amenity": "Baseball Stadium",
-          //     "popupContent": "This is where the Rockies play!"
-          // },
-          //     "geometry": {
-          //     "type": "Point",
-          //     "coordinates": [-104.99404, 39.75621]
-          //   }
-          //  };
-
-
+            marker.bindPopup("<b>Gospel Rescue Ministries</b><br>I am a popup.").openPopup();
+            
+            //Central Union Mission
+            var marker = L.marker([38.898729, -77.011111]).addTo(mymap);
+            marker.bindPopup("<b>Central Union Mission</b><br>I am a popup.").openPopup();
+           
+            // New Beginning Family Shelter
+            var marker = L.marker([38.930444, -77.034362]).addTo(mymap);
+            marker.bindPopup("<b>New Beginning Family Shelter</b><br>I am a popup.").openPopup();
+            
+            // Community of Hope
+            var marker = L.marker([38.925649, -77.033103]).addTo(mymap);
+            marker.bindPopup("<b>Community of Hope</b><br>I am a popup.").openPopup();
+            
+            // Coalition For The Homeless
+            var marker = L.marker([38.906605, -77.011971]).addTo(mymap);
+            marker.bindPopup("<b>Coalition For The Homeless</b><br>I am a popup.").openPopup();
         </script>
 	    </div>
     </div>
