@@ -7,8 +7,10 @@
   <title>Homies | Home</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
   <link rel="stylesheet" href="./assets/css/master.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+  
+  
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
@@ -136,6 +138,49 @@
       <div id="mapid"></div>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="mapModal" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2>Map</h2>
+      <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+      <div id="mapid"></div>
+        <script>
+          var mymap = L.map('mapid').setView([38.9072, -77.0369], 13);
+
+          L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+          maxZoom: 18,
+          id: 'mapbox.streets',
+          accessToken: 'pk.eyJ1IjoibWF4Y2xpZmYzIiwiYSI6ImNqZG5jY3JpZTB3MTAzM2w3ZWc3YjY0ZTQifQ._bWd-zVlJ0tGASryi-nY0w'
+          }).addTo(mymap);
+
+          //CCNV
+          var marker = L.marker([38.894665, -77.031820]).addTo(mymap);
+          marker.bindPopup("<b>CCNV</b><br>425 2nd St NW, Washington, DC 20001").openPopup();
+
+         //Gospel Rescue Ministries
+          var marker = L.marker([38.900331, -77.019219]).addTo(mymap);
+          marker.bindPopup("<b>Gospel Rescue Ministries</b><br>810 5th St NW, Washington, DC 20001").openPopup();
+          
+          //Central Union Mission
+          var marker = L.marker([38.898729, -77.011111]).addTo(mymap);
+          marker.bindPopup("<b>Central Union Mission</b><br>65 Massachusetts Ave NW, Washington, DC 20001").openPopup();
+         
+          // New Beginning Family Shelter
+          var marker = L.marker([38.930444, -77.034362]).addTo(mymap);
+          marker.bindPopup("<b>New Beginning Family Shelter</b><br>1448 Park Rd NW, Washington, DC 20010").openPopup();
+          
+          // Community of Hope
+          var marker = L.marker([38.925649, -77.033103]).addTo(mymap);
+          marker.bindPopup("<b>Community of Hope</b><br>1413 Girard St NW, Washington, DC 20009").openPopup();
+          
+          // Coalition For The Homeless
+          var marker = L.marker([38.906605, -77.011971]).addTo(mymap);
+          marker.bindPopup("<b>Coalition For The Homeless</b><br>635 I St NE, Washington, DC 20002").openPopup();
+      </script>
+    </div>
   </div>
 </body>
 <script src="./assets/javascript/main.js" charset="utf-8"></script>
