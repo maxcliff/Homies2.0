@@ -65,7 +65,7 @@ h3 {
   width: 15em;
 }
 .menu{
-  position: absolute;
+  position: relative;
   bottom: 10px;
   text-shadow: 4px 3px 0px black, 9px 8px 0px rgba(0,0,0,0.15);
 
