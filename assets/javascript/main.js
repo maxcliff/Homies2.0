@@ -2,7 +2,7 @@ $(function(){
 
   // PP and BTC icons
   $(".icon").click(function(){
-    
+    alert("Sorry we currently do not support this feature!");
   });
 
   // Navbar
