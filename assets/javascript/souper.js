@@ -1,26 +1,25 @@
 //Globals
 var liquid = {
-	nonVeg: ["Chicken Broth", "Beef Broth", "Pork Broth", "Bone Broth", "Turkey Broth"],
-	veg: ["Vegatable Broth", "Coconut Broth", "Umami Broth", "Tomato Broth", "Onion and Garlic Broth"]
+	nonVeg: ["32 ounce Chicken Broth", "32 ounce Beef Broth", "32 ounce Pork Broth", "32 ounce Bone Broth", "32 ounce Turkey Broth"],
+	veg: ["32 ounce Vegatable Broth", "32 ounce Coconut Broth", "32 ounce Umami Broth", "32 ounce Tomato Broth", "32 ounce Onion and Garlic Broth"]
 };
 var protein = {
-	nonVeg: ["Chicken", "Beef", "Pork", "Turkey", "Veal"],
-	veg: ["Black Beans", "Pinto Beans", "Lentils", "Kidney Beans", "Navy Beans"],
+	nonVeg: ["1 lb Chicken", "1 lb Beef", "1 lb Pork", "1 lb Turkey", "1 lb Veal"],
+	veg: ["16 ounce Black Beans", "16 ounce Pinto Beans", "16 ounce Lentils", "16 ounce Kidney Beans", "16 ounce Navy Beans"],
 };
 var vegetables =
-	["tomatoes, chopped chiles, bell peppers, corn, potatoes",
-    "sweet potatoes, pumpkin, parsley, onion, corn",
-    "onion, carrot, celery, zucchini, potatoes",
-    "onion, kale, basil, tomatoes, potatoes",
-    "sweet potatoes, carrot, onion, celery, kale"];
+	["1.5 cup tomatoes, 1.5 cup chopped chiles, 1.5 cup bell peppers, 1.5 cup corn, 1.5 cup potatoes",
+    "1.5 cup sweet potatoes, 1.5 cup pumpkin, 1.5 cup parsley, 1.5 cup onion, 1.5 cup corn",
+    "1.5 cup onion, 1.5 cup carrot, 1.5 cup celery, 1.5 cup zucchini, 1.5 cup potatoes",
+    "1.5 cup onion, 1.5 cup kale, 1.5 cup basil, 1.5 cup tomatoes, 1.5 cup potatoes",
+    "1.5 cup sweet potatoes, 1.5 cup carrot, 1.5 cup onion, 1.5 cup celery, 1.5 cup kale"];
 
 var spices=[
-"salt, pepper, chili powder, chives, coriander",
-"salt, pepper, paprika, chives, cumin",
-"salt, pepper, ginger, oregano, chives",
-"salt, pepper, chili powder, lemon grass, sumac",
-"salt, pepper, chili powder, five spice, cumin"];
-
+"salt and pepper to taste, 2 tsp curry powder, 2 tsp chili powder, 2 tsp chives, 2 tsp coriander",
+"salt and pepper to taste, 2tsp paprika, 2 tsp chives, 2 tsp cumin, 2 tsp garlic powder",
+"salt and pepper to taste, 2 tsp ginger, 2 tsp soy sauce, 2 tsp onion powder, 2 tsp garlic powder",
+"salt and pepper to taste, 2 tsp chili powder, 2 tsp lemon grass, 2 tsp sumac, 2 tsp cumin, 2 tsp garlic powder",
+"salt and pepper to taste, 2 tsp chili powder, 2 tsp five spice, 2 tsp cumin, 2 tsp jalapeno powder, 2 tsp garlic powder"];
 
 var recipe = [];
 
